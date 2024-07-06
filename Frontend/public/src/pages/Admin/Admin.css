@@ -1,0 +1,372 @@
+@import url('/style.css');
+
+.sectionAdmin {
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--vle-color2);
+}
+.articleUsers {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  justify-items: start;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  background-color: var(--vle-color4);
+  padding: var(--vle-margin-xl) var(--vle-margin-xl);
+}
+.articleUsers > h3 {
+  color: var(--vle-color6);
+  font-size: 18px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+.articleUsers > ul {
+  flex-direction: column;
+  width: 800px;
+  gap: 30px;
+  padding: var(--vle-padding-m);
+}
+.articleUsers > ul > li {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+.articleUsers > ul > li > p {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--vle-color3);
+  letter-spacing: 2px;
+  min-width: 250px;
+}
+.articleUsers > p {
+  color: var(--vle-color6);
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+.articleAtt {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  justify-items: start;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  background-color: var(--vle-color2);
+  padding: var(--vle-margin-xl) var(--vle-margin-l);
+}
+.articleAtt > h3 {
+  color: var(--vle-color6);
+  font-size: 18px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+.articleAtt > ul {
+  flex-direction: column;
+  width: 800px;
+  gap: 30px;
+  padding: var(--vle-padding-m);
+}
+.articleAtt > ul > li {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+.articleAtt > ul > li > p {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--vle-color3);
+  letter-spacing: 2px;
+  text-align: justify;
+  min-width: 250px;
+}
+.articleAtt > p {
+  color: var(--vle-color6);
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+.articleEventsVal {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  background-color: var(--vle-color1);
+  padding: var(--vle-margin-l) var(--vle-margin-l);
+}
+.mensajeNoEventos {
+  font-size: 15px;
+}
+.articleEventsVal > h3 {
+  color: var(--vle-color6);
+  font-size: 18px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+.divEventsVal {
+  width: 100%;
+  height: 100%;
+  margin-top: var(--vle-margin-xl);
+  gap: 50px;
+}
+.divEventVal {
+  width: 400px;
+  height: auto;
+  flex-direction: column;
+  background-color: var(--vle-color5);
+  padding: var(--vle-padding-s);
+}
+
+.divEventVal > div:first-of-type {
+  width: 350px;
+  height: 200px;
+  margin-bottom: 20px;
+  background-color: var(--vle-color6);
+}
+.divEventVal > div:first-of-type > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid var(--vle-color4);
+}
+
+.divEventVal > h4 {
+  color: var(--vle-color6);
+  font-size: 18px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.divEventVal > p {
+  color: var(--vle-color6);
+  font-size: 13px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.divEventVal > p:last-of-type {
+  color: var(--vle-color1);
+  font-size: 14px;
+  text-align: justify;
+  line-height: 1.5;
+}
+.divButtons {
+  gap: 20px;
+  margin-top: 10px;
+}
+
+/*MediaQueries*/
+@media (max-width: 1017px) {
+  .articleUsers > h3 {
+    font-size: 15px;
+  }
+  .articleUsers > ul {
+    width: 650px;
+    gap: 20px;
+    padding: 0;
+  }
+  .articleUsers > ul > li > p {
+    font-size: 13px;
+  }
+  .articleUsers > p {
+    font-size: 13px;
+  }
+  .articleAtt > h3 {
+    font-size: 15px;
+  }
+  .articleAtt > ul {
+    width: 650px;
+    gap: 20px;
+    padding: 0;
+  }
+  .articleAtt > ul > li > p {
+    font-size: 13px;
+  }
+  .articleAtt > p {
+    font-size: 13px;
+  }
+  .articleEventsVal > h3 {
+    font-size: 15px;
+  }
+  .divEventVal {
+    width: 300px;
+    padding: var(--vle-padding-s);
+  }
+  .divEventVal > div:first-of-type {
+    width: 280px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .divEventVal > h4 {
+    font-size: 13px;
+  }
+  .divEventVal > p {
+    font-size: 11px;
+  }
+  .divEventVal > p:last-of-type {
+    font-size: 11px;
+  }
+  .mensajeNoEventos {
+    font-size: 13px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 731px) {
+  .articleUsers > h3 {
+    font-size: 13px;
+  }
+  .articleUsers > ul {
+    width: 500px;
+    gap: 10px;
+    padding: 0;
+  }
+  .articleUsers > ul > li > p {
+    font-size: 11px;
+    min-width: 150px;
+    letter-spacing: 1px;
+  }
+  .articleUsers > p {
+    font-size: 11px;
+  }
+  .articleAtt > h3 {
+    font-size: 13px;
+  }
+  .articleAtt > ul {
+    width: 500px;
+    gap: 10px;
+    padding: 0;
+  }
+  .articleAtt > ul > li > p {
+    font-size: 11px;
+    min-width: 150px;
+    letter-spacing: 1px;
+  }
+  .articleAtt > p {
+    font-size: 11px;
+  }
+  .articleEventsVal > h3 {
+    font-size: 13px;
+  }
+  .divEventVal > h4 {
+    font-size: 13px;
+  }
+  .divEventVal > p {
+    font-size: 11px;
+  }
+  .divEventVal > p:last-of-type {
+    font-size: 11px;
+  }
+  .mensajeNoEventos {
+    font-size: 11px;
+  }
+  .articleAtt > ul > li > button {
+    font-size: 11px;
+  }
+  .articleUsers > ul > li > button {
+    font-size: 11px;
+  }
+}
+@media (max-width: 546px) {
+  .articleUsers > h3 {
+    font-size: 12px;
+  }
+  .articleUsers > ul {
+    width: 300px;
+    gap: 20px;
+    padding: 0;
+  }
+  .articleUsers > ul > li > p {
+    font-size: 10px;
+    min-width: 100px;
+    letter-spacing: 0px;
+  }
+  .articleUsers > ul > li > button {
+    width: 45px;
+    font-size: 9px;
+    letter-spacing: 0;
+  }
+  .articleUsers > p {
+    font-size: 11px;
+  }
+  .articleAtt > h3 {
+    font-size: 12px;
+  }
+  .articleAtt > ul {
+    width: 300px;
+    gap: 20px;
+    padding: 0;
+  }
+  .articleAtt > ul > li > p {
+    font-size: 10px;
+    min-width: 100px;
+    letter-spacing: 0px;
+  }
+  .articleAtt > ul > li > button {
+    width: 45px;
+    font-size: 9px;
+    letter-spacing: 0;
+  }
+  .articleAtt > p {
+    font-size: 11px;
+  }
+  .articleEventsVal > h3 {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .divEventVal > h4 {
+    font-size: 12px;
+  }
+  .divEventVal > p {
+    font-size: 11px;
+  }
+  .divEventVal > p:last-of-type {
+    font-size: 11px;
+  }
+
+  .divEventVal {
+    width: 250px;
+    height: auto;
+    padding: var(--vle-padding-s);
+  }
+  .divEventVal > div:first-of-type {
+    width: 230px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .divEventVal > h4 {
+    font-size: 12px;
+  }
+  .divEventVal > p {
+    font-size: 11px;
+  }
+  .divEventVal > p:last-of-type {
+    font-size: 11px;
+  }
+  .divButtons {
+    gap: 20px;
+    margin-top: 0px;
+  }
+  .divButtons > button {
+    font-size: 11px;
+  }
+}

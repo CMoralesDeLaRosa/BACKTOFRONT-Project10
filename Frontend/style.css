@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100svh;
+}
+
+:root {
+  /*FONT-FAMILY*/
+  font-family: 'Jost', sans-serif;
+  font-optical-sizing: auto;
+
+  /*BRANDING-COLORS*/
+  --vle-color1: #d39cbd;
+  --vle-color2: #d3b19e;
+  --vle-color3: #312528;
+  --vle-color4: #995e7c;
+  --vle-color5: #683142;
+  --vle-color6: rgb(255, 255, 255);
+
+  /*BACKGROUND COLORS*/
+  --vle-first-bg: var(--vle-color1);
+  --vle-second-bg: var(--vle-color2);
+  --vle-third-bg: var(--vle-color3);
+  --vle-forth-bg: var(--vle-color5);
+
+  /*TEXT COLORS*/
+  --vle-primary-text: var(--vle-color3);
+  --vle-secondary-text: var(--vle-color6);
+
+  /*BORDER RADIUS*/
+  --vle-br: 20px;
+
+  /*SPACING*/
+  --vle-margin-xs: 10px;
+  --vle-margin-s: 20px;
+  --vle-margin-m: 30px;
+  --vle-margin-l: 40px;
+  --vle-margin-xl: 50px;
+  --vle-margin-section: 100px;
+
+  --vle-padding-xs: 10px;
+  --vle-padding-s: 20px;
+  --vle-padding-m: 30px;
+  --vle-padding-l: 40px;
+  --vle-padding-xl: 50px;
+  --vle-padding-section: 100px;
+}
+
+/*FLEX CONTAINER*/
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#app {
+  height: 100svh;
+}
+
+main {
+  height: auto;
+  width: 100%;
+}
