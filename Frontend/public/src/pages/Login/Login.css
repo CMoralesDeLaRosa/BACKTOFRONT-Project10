@@ -21,9 +21,7 @@ p {
   padding: var(--vle-padding-l);
   gap: 30px;
 }
-.loginUsers:hover {
-  scale: 1.1;
-}
+
 .loginUsers > .artInfo {
   height: 25px;
   width: 100%;
@@ -104,9 +102,7 @@ p {
   padding: var(--vle-padding-l);
   gap: 30px;
 }
-.loginAttendees:hover {
-  scale: 1.1;
-}
+
 .loginAttendees > .artInfo {
   height: 25px;
   width: 100%;
