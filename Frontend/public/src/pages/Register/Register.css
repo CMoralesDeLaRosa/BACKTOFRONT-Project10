@@ -15,9 +15,7 @@
   padding: var(--vle-padding-l);
   gap: 30px;
 }
-.registerUsers:hover {
-  scale: 1.1;
-}
+
 .registerUsers > .artInfo {
   max-width: 400px;
   height: 140px;
@@ -104,9 +102,7 @@
   padding: var(--vle-padding-l);
   gap: 30px;
 }
-.registerAttendees:hover {
-  scale: 1.1;
-}
+
 .registerAttendees > .artInfo {
   width: 400px;
   height: 140px;
