@@ -6,6 +6,10 @@ import {
   hideSpinner,
   showSpinner
 } from '../../components/SpinnerLoading/SpinnerLoading'
+import {
+  handleLoginFormSubmitAttendee,
+  handleLoginFormSubmitUser
+} from '../Login/Login'
 
 export const Register = (nodoPadre) => {
   sessionStorage.removeItem('paginaActual')
@@ -33,12 +37,10 @@ export const Register = (nodoPadre) => {
 
   nodoPadre.appendChild(sectionRegister)
 }
-
 export const validatePassword = (password) => {
   const passwordRegex = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{1,8}$/
   return passwordRegex.test(password)
 }
-
 export const handleUserFormSubmit = async (formData) => {
   const existingErrors = document.querySelectorAll('.errorPRegister')
   existingErrors.forEach((error) => error.remove())
@@ -73,19 +75,13 @@ export const handleUserFormSubmit = async (formData) => {
 
     if (!res.ok) {
       const errorData = await res.json()
-      throw new Error(errorData.error || 'Error al registrarse')
+      throw new Error(errorData.error)
     }
 
     const userRegister = await res.json()
 
-    const registradoP = document.createElement('p')
-    registradoP.classList.add('registradoP')
-    registradoP.textContent =
-      'Te has registrado correctamente. Ya puedes iniciar sesión.'
     const forms = document.querySelectorAll('.form')
-    const secondForm = forms[0]
-    secondForm.appendChild(registradoP)
-    forms[0].reset()
+    handleLoginFormSubmitUser(new FormData(forms[0]))
   } catch (error) {
     const errorP = document.createElement('p')
     errorP.classList.add('errorPRegister')
@@ -136,20 +132,13 @@ export const handleAttendeeFormSubmit = async (formData) => {
     if (!res.ok) {
       const errorData = await res.json()
       console.log('Error en la respuesta del servidor:', errorData)
-      throw new Error(errorData.error || 'Error al registrarse')
+      throw new Error(errorData.error)
     }
 
     const attendeeRegister = await res.json()
 
-    const registradoP = document.createElement('p')
-    registradoP.classList.add('registradoP')
-    registradoP.textContent =
-      'Te has registrado correctamente. Ya puedes iniciar sesión.'
     const forms = document.querySelectorAll('.form')
-    const secondForm = forms[1]
-    secondForm.appendChild(registradoP)
-
-    forms[1].reset()
+    handleLoginFormSubmitAttendee(new FormData(forms[1]))
   } catch (error) {
     console.log('Error en la solicitud de registro:', error)
     const errorP = document.createElement('p')
