@@ -1,5 +1,5 @@
 import { Footer } from './public/src/components/Footer/Footer'
-import { iniciarSesion } from './public/src/components/InicioSesion/InicioSesion'
+import { startSession } from './public/src/utils/StartSession'
 import './style.css'
 
 const divApp = () => {
@@ -10,4 +10,4 @@ const divApp = () => {
 
 divApp()
 
-iniciarSesion()
+startSession()
