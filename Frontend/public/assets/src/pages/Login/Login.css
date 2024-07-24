@@ -1,0 +1,363 @@
+@import url('/style.css');
+
+.sectionLogin {
+  width: 100%;
+  height: 670px;
+  gap: 60px;
+  background-color: var(--vle-color5);
+  padding: var(--vle-padding-xl);
+}
+p {
+  color: var(--vle-color6);
+  font-size: 12px;
+}
+.loginUsers {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--vle-color4);
+  justify-content: center;
+  height: 380px;
+  width: 400px;
+  padding: var(--vle-padding-l);
+  gap: 30px;
+  opacity: 0.9;
+}
+.loginUsers:hover {
+  opacity: 1;
+}
+
+.loginUsers > .artInfo {
+  height: 25px;
+  width: 100%;
+}
+.loginUsers > .artInfo > h3 {
+  font-size: 18px;
+  color: var(--vle-color6);
+  letter-spacing: 4px;
+  text-align: center;
+  line-height: 1.5;
+}
+.loginUsers > .artForm {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  gap: 0;
+  width: 100%;
+}
+
+.loginUsers > .artForm > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  justify-content: space-between;
+}
+.loginUsers > .artForm > form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  width: 200px;
+  gap: 10px;
+}
+.loginUsers > .artForm > form > div > label {
+  font-size: 17px;
+  color: var(--vle-color6);
+}
+.loginUsers > .artForm > form > div > input {
+  height: auto;
+  width: 220px;
+  font-size: 15px;
+  border: none;
+  border-bottom: 2px solid var(--vle-color6);
+  background: none;
+  padding: 5px 0;
+  white-space: nowrap;
+  color: var(--vle-color6);
+}
+.loginUsers > .artForm > form > div > input::placeholder {
+  opacity: 0.5;
+}
+.loginUsers > .artForm > form > button {
+  width: 150px;
+  font-size: 15px;
+  background-color: var(--vle-color6);
+  border: 1px solid var(--vle-color6);
+  color: var(--vle-color5);
+}
+.loginUsers > .artForm > form > button:hover {
+  cursor: pointer;
+  background-color: var(--vle-color5);
+  color: var(--vle-color6);
+  border: 1px solid var(--vle-color5);
+}
+.loginUsers > .artForm > form > div > input::placeholder {
+  text-align: center;
+  color: var(--vle-color6);
+}
+.loginAttendees {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--vle-color1);
+  justify-content: center;
+  height: 380px;
+  width: 400px;
+  padding: var(--vle-padding-l);
+  gap: 30px;
+  opacity: 0.9;
+}
+.loginAttendees:hover {
+  opacity: 1;
+}
+
+.loginAttendees > .artInfo {
+  height: 25px;
+  width: 100%;
+}
+.loginAttendees > .artInfo > h3 {
+  font-size: 18px;
+  color: var(--vle-color5);
+  letter-spacing: 4px;
+  text-align: center;
+  line-height: 1.5;
+}
+.loginAttendees > .artForm {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  gap: 0;
+  width: 100%;
+}
+.loginAttendees > .artForm > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  justify-content: space-between;
+}
+.loginAttendees > .artForm > form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  width: 200px;
+  gap: 10px;
+}
+.loginAttendees > .artForm > form > div > label {
+  font-size: 17px;
+  color: var(--vle-color5);
+}
+.loginAttendees > .artForm > form > div > input {
+  height: auto;
+  width: 220px;
+  font-size: 15px;
+  border: none;
+  border-bottom: 2px solid var(--vle-color5);
+  background: none;
+  padding: 5px 0;
+  white-space: nowrap;
+  color: var(--vle-color5);
+}
+.loginAttendees > .artForm > form > div > input::placeholder {
+  opacity: 0.5;
+  text-align: center;
+  color: var(--vle-color6);
+}
+.loginAttendees > .artForm > form > button {
+  width: 150px;
+  font-size: 15px;
+  background-color: var(--vle-color4);
+  border: 1px solid var(--vle-color4);
+  color: var(--vle-color6);
+}
+.loginAttendees > .artForm > form > button:hover {
+  cursor: pointer;
+  background-color: var(--vle-color5);
+  border: 1px solid var(--vle-color5);
+  color: var(--vle-color6);
+}
+
+/*MediaQueries*/
+@media (max-width: 977px) {
+  .sectionLogin {
+    gap: 40px;
+    height: 630px;
+  }
+  p {
+    font-size: 11px;
+  }
+  .loginUsers {
+    height: 300px;
+    width: 320px;
+    padding: var(--vle-padding-m);
+    gap: 0px;
+  }
+  .loginAttendees {
+    height: 300px;
+    width: 320px;
+    padding: var(--vle-padding-m);
+    gap: 0px;
+  }
+  .loginUsers > .artInfo {
+    height: auto;
+  }
+  .loginAttendees > .artInfo {
+    height: auto;
+  }
+  .loginUsers > .artInfo > h3 {
+    font-size: 13px;
+  }
+  .loginAttendees > .artInfo > h3 {
+    font-size: 13px;
+  }
+  .loginUsers > .artForm {
+    height: 200px;
+    gap: 0;
+  }
+  .loginAttendees > .artForm {
+    height: 200px;
+    gap: 0;
+  }
+  .loginUsers > .artForm > form {
+    height: 200px;
+    margin-top: var(--vle-padding-s);
+  }
+  .loginAttendees > .artForm > form {
+    height: 200px;
+    margin-top: var(--vle-padding-s);
+  }
+  .loginUsers > .artForm > form > div {
+    height: 60px;
+    width: 200px;
+    gap: 10px;
+  }
+  .loginAttendees > .artForm > form > div {
+    height: 60px;
+    width: 200px;
+    gap: 10px;
+  }
+  .loginUsers > .artForm > form > div > label {
+    font-size: 13px;
+  }
+  .loginAttendees > .artForm > form > div > label {
+    font-size: 13px;
+  }
+  .loginUsers > .artForm > form > div > input {
+    width: 180px;
+    font-size: 11px;
+    border-bottom: 1.5px solid var(--vle-color6);
+  }
+  .loginAttendees > .artForm > form > div > input {
+    width: 180px;
+    font-size: 11px;
+  }
+  .loginUsers > .artForm > form > button {
+    width: 100px;
+    height: 25px;
+    font-size: 11px;
+    border: none;
+  }
+  .loginAttendees > .artForm > form > button {
+    width: 100px;
+    height: 25px;
+    font-size: 11px;
+    border: none;
+  }
+}
+@media (max-width: 779px) {
+  .sectionLogin {
+    flex-direction: column;
+    padding: var(--vle-padding-xl);
+    height: auto;
+  }
+}
+@media (max-width: 418px) {
+  .sectionLogin {
+    gap: 50px;
+    height: 100%;
+  }
+  p {
+    font-size: 10px;
+  }
+  .loginUsers {
+    height: 250px;
+    width: 270px;
+    padding: var(--vle-padding-s);
+    gap: 0px;
+  }
+  .loginAttendees {
+    height: 250px;
+    width: 270px;
+    padding: var(--vle-padding-s);
+    gap: 0px;
+  }
+  .loginUsers > .artInfo {
+    height: auto;
+  }
+  .loginAttendees > .artInfo {
+    height: auto;
+  }
+  .loginUsers > .artInfo > h3 {
+    font-size: 11px;
+  }
+  .loginAttendees > .artInfo > h3 {
+    font-size: 11px;
+  }
+  .loginUsers > .artForm {
+    height: 150px;
+    padding: 0px;
+    gap: 0;
+  }
+  .loginAttendees > .artForm {
+    height: 150px;
+    padding: 0px;
+    gap: 0;
+  }
+  .loginUsers > .artForm > form {
+    height: 150px;
+    margin-top: var(--vle-padding-xs);
+  }
+  .loginAttendees > .artForm > form {
+    height: 150px;
+    margin-top: var(--vle-padding-xs);
+  }
+  .loginUsers > .artForm > form > div {
+    height: 40px;
+    width: 150px;
+    gap: 10px;
+  }
+  .loginAttendees > .artForm > form > div {
+    height: 40px;
+    width: 150px;
+    gap: 10px;
+  }
+  .loginUsers > .artForm > form > div > label {
+    font-size: 10px;
+  }
+  .loginAttendees > .artForm > form > div > label {
+    font-size: 10px;
+  }
+  .loginUsers > .artForm > form > div > input {
+    width: 150px;
+    font-size: 10px;
+    border-bottom: 1.5px solid var(--vle-color6);
+  }
+  .loginAttendees > .artForm > form > div > input {
+    width: 150px;
+    font-size: 10px;
+  }
+  .loginUsers > .artForm > form > button {
+    width: 80px;
+    height: 20px;
+    font-size: 10px;
+  }
+  .loginAttendees > .artForm > form > button {
+    width: 80px;
+    height: 20px;
+    font-size: 10px;
+  }
+}

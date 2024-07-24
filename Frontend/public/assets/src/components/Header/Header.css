@@ -1,0 +1,214 @@
+@import url('/style.css');
+
+header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--vle-color6);
+}
+.sectionLogo {
+  display: flex;
+  justify-content: start;
+  margin-left: var(--vle-margin-xl);
+  align-items: center;
+  width: 600px;
+  height: 100%;
+  gap: 30px;
+  justify-content: start;
+}
+.sectionLogo > div {
+  height: 50px;
+  width: 50px;
+}
+.sectionLogo > div > img {
+  height: 100%;
+  width: 100%;
+}
+.sectionLogo > h2 {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 7px;
+}
+.sectionNav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: var(--vle-margin-xl);
+  height: 100%;
+  width: 900px;
+}
+.navHeader {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 50px;
+}
+.navHeader > ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 50px;
+}
+.navHeader > ul > li {
+  font-size: 13px;
+  width: auto;
+  text-align: center;
+}
+.navHeader > ul > li > a {
+  color: var(--vle-color3);
+  letter-spacing: 2px;
+}
+.navHeader > ul > li > a:hover {
+  text-decoration: underline;
+  color: var(--vle-color4);
+}
+.buttonCerrarSesion {
+  height: 20px;
+  width: auto;
+  font-size: 13px;
+  color: var(--vle-color3);
+  letter-spacing: 2px;
+}
+.buttonCerrarSesion:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--vle-color4);
+}
+
+/*MediaQueries*/
+@media (max-width: 1189px) {
+  .sectionLogo > div {
+    height: 40px;
+    width: 40px;
+  }
+  .sectionLogo > h2 {
+    font-size: 13px;
+  }
+  .navHeader {
+    gap: 20px;
+  }
+  .navHeader > ul {
+    gap: 50px;
+  }
+  .navHeader > ul > li {
+    font-size: 12px;
+    width: auto;
+  }
+  .buttonCerrarSesion {
+    font-size: 12px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1117px) {
+  .sectionLogo > h2 {
+    font-size: 12px;
+    letter-spacing: 6px;
+  }
+  .navHeader {
+    gap: 10px;
+  }
+  .navHeader > ul {
+    gap: 50px;
+  }
+  .navHeader > ul > li {
+    font-size: 11px;
+    width: auto;
+  }
+  .buttonCerrarSesion {
+    font-size: 11px;
+  }
+}
+@media (max-width: 1059px) {
+  header {
+    margin-top: 10px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 0px;
+  }
+  .sectionLogo {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 0px;
+    width: 100%;
+    height: 50%;
+  }
+  .sectionNav {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    margin-right: 0px;
+    height: 50%;
+    width: 100%;
+  }
+  .navHeader {
+    width: 600px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 669px) {
+  header {
+    height: 100px;
+  }
+  .sectionLogo {
+    gap: 10px;
+  }
+  .sectionLogo > h2 {
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navHeader {
+    width: 400px;
+  }
+  .navHeader > ul {
+    gap: 20px;
+  }
+  .navHeader > ul > li {
+    font-size: 10px;
+    width: auto;
+  }
+  .buttonCerrarSesion {
+    font-size: 10px;
+    width: auto;
+    margin-left: 0;
+  }
+}
+@media (max-width: 546px) {
+  header {
+    height: 100px;
+  }
+  .sectionLogo > h2 {
+    font-size: 11px;
+  }
+  .navHeader {
+    width: 400px;
+    gap: 10px;
+  }
+  .navHeader > ul {
+    gap: 20px;
+  }
+  .navHeader > ul > li {
+    font-size: 8px;
+    width: auto;
+  }
+  .buttonCerrarSesion {
+    width: auto;
+    font-size: 8px;
+    height: 15px;
+  }
+}
