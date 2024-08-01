@@ -17,7 +17,7 @@ export const Home = async (nodoPadre) => {
   divImgsHome.classList.add('carrusel')
 
   try {
-    const { status, response } = await API({ endpoint: '/events' })
+    const { status, response } = await API({ endpoint: 'events' })
 
     if (status !== 200) {
       throw new Error(`Error en la respuesta de la API: ${status}`)
