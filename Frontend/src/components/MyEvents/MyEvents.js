@@ -37,7 +37,7 @@ export const myEvents = async () => {
       }
 
       const { status, response } = await API({
-        endpoint: `/attendees/${attendee._id}`,
+        endpoint: `attendees/${attendee._id}`,
         token
       })
 
