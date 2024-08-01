@@ -27,7 +27,7 @@ export const ValidateEventsAdmin = async (nodoPadre) => {
     try {
       showSpinner()
       const { status, response } = await API({
-        endpoint: `/events/not-verified`,
+        endpoint: `events/not-verified`,
         token
       })
 
