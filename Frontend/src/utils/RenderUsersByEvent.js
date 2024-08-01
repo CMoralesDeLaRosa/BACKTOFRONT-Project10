@@ -26,7 +26,7 @@ export const renderAttendeesUsersByEvent = async (evento) => {
 
     if (storedDataAtt || storedDataUs) {
       const { status, response } = await API({
-        endpoint: `/events/attendees/${evento._id}`,
+        endpoint: `events/attendees/${evento._id}`,
         token
       })
 
