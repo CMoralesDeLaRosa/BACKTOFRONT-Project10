@@ -54,7 +54,7 @@ export const myEvents = async () => {
       }
 
       const { status, response } = await API({
-        endpoint: `/users/${user._id}`,
+        endpoint: `users/${user._id}`,
         token
       })
 
