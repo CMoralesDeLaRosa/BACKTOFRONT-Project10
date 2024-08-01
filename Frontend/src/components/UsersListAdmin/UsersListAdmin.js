@@ -32,7 +32,7 @@ export const UsersListAdmin = async (nodoPadre) => {
     try {
       showSpinner()
       const { status, response } = await API({
-        endpoint: `/users`,
+        endpoint: `users`,
         token
       })
 
@@ -74,7 +74,7 @@ export const UsersListAdmin = async (nodoPadre) => {
       showSpinner()
 
       const { status, response } = await API({
-        endpoint: `/attendees`,
+        endpoint: `attendees`,
         token
       })
 
