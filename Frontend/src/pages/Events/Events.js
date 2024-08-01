@@ -96,7 +96,7 @@ export const Events = async (nodoPadre) => {
       throw new Error('No estás autorizado. Token no encontrado.')
     }
 
-    const { status, response } = await API({ endpoint: '/events', token })
+    const { status, response } = await API({ endpoint: 'events', token })
 
     if (status !== 200) {
       throw new Error(`Error en la respuesta de la API: ${status}`)
